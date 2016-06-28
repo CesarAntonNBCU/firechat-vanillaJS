@@ -1,0 +1,122 @@
+html , body {
+  display           : flex;
+  height            : 100%;
+  min-height        : 100%;
+  max-height        : 100%;
+  width             : 100%;
+  min-width         : 100%;
+  max-width         : 100%;
+  margin            : 0;
+  padding           : 0;
+}
+body {
+  flex-direction    : column;
+  background-color  : #ECEFF1;
+  font-family       : 'Roboto', sans-serif;
+}
+body input:focus {
+  outline           : none;
+}
+firechat-user {
+  display           : flex;
+  flex-direction    : row;
+  justify-content   : flex-end;
+  align-items       : center;
+  height            : 4em;
+  min-height        : 4em;
+  max-height        : 4em;
+  padding-right     : 0.5em;
+  background-color  : #00BCD4;
+}
+firechat-user  img {
+  height            : 3em;
+  width             : 3em;
+  border-radius     : 50%;
+}
+firechat-user  p {
+  color             : #FFF;
+  padding-right     : 0.5em;
+  font-weight       : bold;
+}
+firechat-messages {
+  display           : flex;
+  flex-direction    : column;
+  flex              : 1;
+  overflow-y        : auto;
+  background-color  : #ECEFF1;
+  padding-bottom    : 1em;
+}
+firechat-messages  firechat-message {
+  display           : flex;
+  flex-direction    : row;
+  align-items       : center;
+  min-height        : 3em;
+  margin            : 1em 1em 0;
+  padding           : 0.5em;
+  background-color  : #FFF;
+  border-radius     : 0.5em;
+  transition        : box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow        : 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+firechat-messages  firechat-message:hover {
+  box-shadow        : 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+firechat-messages  firechat-message  img {
+  height            : 2em;
+  width             : 2em;
+  border-radius     : 50%;
+  margin            : 0 0.5em 0 0;
+}
+firechat-messages  firechat-message  firechat-message-content {
+  display           : flex;
+  flex-direction    : column;
+  margin            : -1em 0 0 0;
+}
+firechat-messages  firechat-message  firechat-message-content  firechat-message-content-header {
+  font-weight       : 100;
+  font-size         : 0.7em;
+  font-style        : italic;
+  margin            : 0;
+}
+firechat-messages  firechat-message  firechat-message-content  p {
+  margin            : 0;
+}
+firechat-new-message {
+  display           : flex;
+  flex              : 1;
+  flex-direction    : row;
+  align-items       : center;
+  justify-content   : flex-end;
+  height            : 4em;
+  max-height        : 4em;
+  padding-right     : 1em;
+  background-color  : #FFF;
+  box-shadow        : 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+firechat-new-message  input {
+  flex              : 1;
+  flex-direction    : row;
+  height            : 2em;
+  max-height        : 2em;
+  border            : none;
+  padding           : 0 1em;
+  font-size         : 2em;
+}
+footer {
+  display           : flex;
+  flex-direction    : row;
+  justify-content   : flex-end;
+  align-items       : center;
+  height            : 2em;
+  min-height        : 2em;
+  max-height        : 2em;
+  background-color  : #263238;
+  color             : #B0BEC5;
+  padding-right     : 0.5em;
+  font-style        : italic;
+}
+@media all and (max-width: 570px) {
+  firechat-new-message  input {
+    font-size         : 1em;
+  }
+}

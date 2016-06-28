@@ -1,0 +1,36 @@
+{
+  "name": "firechat",
+  "version": "1.0.0",
+  "description": "Single page aplication realtime web-chat built with HTML5, VanillaJS and CSS using Firebase as a backend. It´s meant to demonstrate the use of Firebase, automated production tasks, continuous integration, HTML5 custom components, CSS3 and lean development.",
+  "main": "firechat.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reicek/firechat-vanillaJS"
+  },
+  "keywords": [
+    "web-components",
+    "firebase",
+    "realtime",
+    "chat"
+  ],
+  "author": "Cesar Anton Dorantes @reicek",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-csslint": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-htmlmin": "^1.4.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "jshint-stylish": "^2.2.0",
+    "load-grunt-tasks": "^3.5.0"
+  }
+}

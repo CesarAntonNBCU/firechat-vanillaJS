@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <title>Firechat</title>
+  <meta name="theme-color" content="#fff">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.22/HTMLImports.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.22/CustomElements.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href='style.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <firechat-user
+    id  = "user">
+  </firechat-user>
+  <firechat-messages
+      id         = "messages">
+  </firechat-messages>
+  <firechat-new-message>
+    <input
+      id          = "new-message"
+      type        = "text"
+      maxlength   = "300"
+      onkeydown   = "return isEnterKey(event)"
+      placeholder = "Type a message and press enter..."
+      autofocus>
+    </input>
+  </firechat-new-message>
+  <footer>
+    <p><strong>Firechat Demo</strong> <small>by @reicek</small></p>
+  </footer>
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  <script src="app.min.js"></script>
+</body>
+</html>
